@@ -2,7 +2,7 @@
 * @Author: wlwc0627
 * @Date:   2019-04-23 17:46:57
 * @Last Modified by:   wlwc0627
-* @Last Modified time: 2019-04-24 18:08:25
+* @Last Modified time: 2019-04-24 23:04:46
 */
 const express    = require('express');
 const app        = express();
@@ -10,7 +10,8 @@ const mongoose   = require('mongoose');
 const bodyParser = require('body-parser');
 const passport   = require('passport');
 //引入user.js
-const user = require('./router/api/user');
+const user    = require('./router/api/user');
+const profile = require('./router/api/profile');
 
 //引用数据库
 const db = require('./config/keys').mongoURI;
@@ -35,6 +36,7 @@ require('./config/passport')(passport);
 
 //使用user
 app.use('/api/user', user);
+app.use('/api/profile', profile);
 
 const port    = o=process.env.PORT || 5000;
 
