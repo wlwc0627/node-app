@@ -2,7 +2,7 @@
 * @Author: wlwc0627
 * @Date:   2019-04-24 09:28:55
 * @Last Modified by:   wlwc0627
-* @Last Modified time: 2019-04-24 18:42:53
+* @Last Modified time: 2019-04-27 14:55:28
 */
 //login、register
 const express     = require('express');
@@ -16,6 +16,10 @@ const gravatar    = require('gravatar');
 
 //引入passport
 const passport    = require('passport');
+
+router.get('/test',(req,res) => {
+	res.json({msg: "success"});
+});
 
 router.post("/register", (req,res) => {
 	//查看邮箱是否被注册
