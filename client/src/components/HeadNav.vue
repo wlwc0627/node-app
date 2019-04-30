@@ -2,7 +2,9 @@
 	<div class="head-nav">
 		<el-row type="flex">
 		    <el-col :span="6" class="logo-container">
-		    	<img src="../assets/logo.jpg" class="logo" alt="">
+		    	<router-link to='/'>
+			    	<img src="../assets/logo.jpg" class="logo" alt="">	    		
+		    	</router-link>
 		  	    <span class="title">米修在线后台管理系统</span>
 		    </el-col>
 		    <el-col :span="6" class="user">
@@ -52,7 +54,7 @@ export default {
 
 		//用户个人中心展示
 		showInfoList () {
-			console.log("用户个人中心展示");
+			this.$router.push('/index/infoshow');
 		},
 
 		//退出登录
@@ -104,7 +106,8 @@ export default {
 
 .userinfo{
 	position: absolute;
-	width: 200px;
+	width: auto;
+	padding: 0 15px;
 	height: 50px;
 	right: 20px;
 	top: 5px;
@@ -124,17 +127,22 @@ export default {
 	display: inline-block;
 	width: auto;
 	vertical-align: middle;
-	padding: 0 5px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	height: 50px;
 }
 
 .name{
-	line-height: 23px;
 	text-align: center;
 	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	line-height: 20px;
 }
 
 .comename{
 	font-size: 12px;
+	margin-top: 3px;
 }
 
 .avatarname{

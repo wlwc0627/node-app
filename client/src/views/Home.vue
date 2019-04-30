@@ -34,10 +34,13 @@ export default {
 
 .title{
 	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
 }
 
 .lead{
 	margin-top: 50px;
 	font-size: 22px;
+	color: #fff;
 }
 </style>

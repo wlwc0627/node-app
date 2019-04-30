@@ -5,6 +5,7 @@ import store from './store'
 import axios from './http'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import '../public/css/iconfont/iconfont.css';
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);

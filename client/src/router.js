@@ -5,6 +5,8 @@ import Register from './views/Register'
 import NotFound from './views/404'
 import Login from './views/Login'
 import Home from './views/Home'
+import InfoShow from './views/InfoShow'
+import FundList from './views/FundList'
 
 Vue.use(Router)
 
@@ -26,9 +28,14 @@ const router = new Router({
           component: Home
         },
         {
-          path: '/home',
+          path: 'home',
           name: 'Home',
           component: Home
+        },
+        {
+          path: 'infoshow',
+          name: 'InfoShow',
+          component: InfoShow
         }
       ]
     },
@@ -46,6 +53,11 @@ const router = new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/fundlist',
+      name: 'fundlist',
+      component: FundList
     }
   ]
 });
