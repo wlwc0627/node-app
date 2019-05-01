@@ -17,7 +17,7 @@
                 	<i class="iconfont">&#xe616;</i>
                 	<span slot="title">资金管理</span>
                 </template>
-                <router-link to="/fundlist">
+                <router-link to="/index/fundlist">
                     <el-menu-item index="1-1">资金流水</el-menu-item>
                 </router-link>
             </el-submenu>

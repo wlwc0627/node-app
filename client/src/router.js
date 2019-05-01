@@ -36,6 +36,11 @@ const router = new Router({
           path: 'infoshow',
           name: 'InfoShow',
           component: InfoShow
+        },
+        {
+          path: 'fundlist',
+          name: 'fundlist',
+          component: FundList
         }
       ]
     },
@@ -53,11 +58,6 @@ const router = new Router({
       path: '/login',
       name: 'login',
       component: Login
-    },
-    {
-      path: '/fundlist',
-      name: 'fundlist',
-      component: FundList
     }
   ]
 });

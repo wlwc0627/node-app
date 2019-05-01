@@ -2,7 +2,7 @@
 * @Author: wlwc0627
 * @Date:   2019-04-24 09:28:55
 * @Last Modified by:   wlwc0627
-* @Last Modified time: 2019-04-30 23:37:08
+* @Last Modified time: 2019-05-01 13:25:50
 */
 //login、register
 const express     = require('express');
@@ -72,7 +72,7 @@ router.post("/login", (req,res) => {
 				  			avatar  : user.avatar,
 				  			identity: user.identity
 				  		};
-				  		jwt.sign(rule, keys, {expiresIn: 360}, (err, token) => {
+				  		jwt.sign(rule, keys, {expiresIn: 3600}, (err, token) => {
 				  			if(err) throw err;
 				  			res.json({
 				  				success: true,
