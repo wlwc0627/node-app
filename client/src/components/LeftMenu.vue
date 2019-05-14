@@ -8,13 +8,13 @@
 		  active-text-color="#409eff">
 		  	<router-link to="/index">
 		  		<el-menu-item index="0">
-		  			<i class="iconfont">&#xe615;</i>
+		  			<img src="../assets/home.png" alt="" class="iconfont">
 		  			<span slot="title">首页</span>
 		  		</el-menu-item>
 		  	</router-link>
 		  	<el-submenu index="1">
                 <template slot="title">
-                	<i class="iconfont">&#xe616;</i>
+                	<img src="../assets/money.png" alt="" class="iconfont">
                 	<span slot="title">资金管理</span>
                 </template>
                 <router-link to="/index/fundlist">
@@ -23,7 +23,7 @@
             </el-submenu>
             <el-submenu index="2">
                 <template slot="title">
-                	<i class="iconfont">&#xe635;</i>
+                	<img src="../assets/info.png" alt="" class="iconfont">
                 	<span slot="title">信息管理</span>
                 </template>
 				<router-link to="/index/infoshow">
@@ -65,7 +65,9 @@ export default{
 }
 
 .iconfont{
-	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	margin-right: 6px;
 }
 
 a{

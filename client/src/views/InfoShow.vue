@@ -9,11 +9,11 @@
 		  <el-col :span="16">
 		  	<div class="userinfo">
 		  		<div class="user-item">
-		  			<i class="iconfont">&#xec52;</i>
+		  			<img src="../assets/avatar.png" alt="" class="iconfont">
 		  			<span>{{ user.name }}</span>
 		  		</div>
 		  		<div class="user-item">
-		  			<i class="iconfont">&#xe666;</i>
+		  			<img src="../assets/settings.png" alt="" class="iconfont">
 		  			<span>{{ user.identity == "manager" ? "管理员" : "普通员工"}}</span>
 		  		</div>
 		  	</div>
@@ -79,7 +79,8 @@ export default {
 }
 
 .user-item .iconfont{
-	font-size: 25px;
+	width: 22px;
+	height: 22px;
 	margin-right: 10px;
 }
 

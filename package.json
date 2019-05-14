@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "使用nodejs+vue-cli2.0开发后台管理系统",
+  "description": "使用nodejs+vue-cli3.0开发后台管理系统",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
